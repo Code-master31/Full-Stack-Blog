@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog</title>
+    </head>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+        .tab {
+            background-color: black;
+            overflow: hidden;
+        }
+        .tab a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 16px;
+            font-family: sans-serif;
+        }
+        .tab a:hover{
+            color:aliceblue;
+            background-color: white;
+
+        }
+        .tab a.active {
+  background-color: white ;
+  color:black;
+        }
+        h1 {
+            justify-content: center;
+            text-align: center;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+        } 
+        h2 {
+            text-align: center;
+            color: black;
+            font-family: 'Times New Roman', Times, serif  
+        }
+        p {
+            text-align: center;
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+    </style>
+    <body>
+        <div class="tab">
+            <a class = "active" href="Home.html">Home</a>
+            <a href = "Blogs.html">Blogs</a>
+            <a href = "Article.html">Articles</a>
+            <a href = "Newslet.html">Newletters</a>
+        </div>
+        <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="img1_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="img2_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="img3_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="img4_wide.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+    </div>
+  </div>
+</div>
+
+        <h1>Welcome to Full Stack Forge!</h1>
+        <h2>Full Stack Forge: Master the Entire Stack, Build Anything</h2>
+        <p>Your ultimate resource for navigating the exciting world of full-stack development.Whether you're wrangling databases,<br>
+         crafting elegant UIs, or deploying robust backends,we're here to sharpen your skills and spark your next big idea.</p>
+         <hr>
+        <div class="row">
+            <div class="column"><img src="img/coders-discussing-about-source-code-compiling-discovers-errors-asks-rest-team-explanations-front-multiple-screens-running-algorithms-software-developers-doing-teamwork.jpg" height="200" width="300"></div>
+            <div class="column"><img src = "img/diverse-programmers-discussing-about-html-code-compiling-discovers-errors-standing-front-multiple-screens-startup-office-software-developers-working-server-interface-development.jpg" height="200" width="300"></div>
+            <div class="column"><img src = "img/system-developers-analyzing-code-wall-screen-tv-looking-errors-while-team-coders-collaborate-artificial-intelligence-project-programmers-working-together-machine-learning-software.jpg" height="200" width="300"></div>
+        </div>
+    </body>
+</html>
